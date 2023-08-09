@@ -1,2 +1,2 @@
 # diarista
-## landing page html/css
+### landing page
