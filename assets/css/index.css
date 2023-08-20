@@ -57,3 +57,94 @@ header {
   color: var(--primary);
   border-radius: 25px;
 }
+
+/* Principal */
+.principal {
+  background-image: url('../img/bg-image-principal.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 70%;
+}
+
+.principal-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.principal-description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 370px;
+}
+
+.principal-description p {
+  font-size: 20px;
+  color: var(--dark-grey);
+  padding-left: 35px;
+}
+
+.principal-description a {
+  text-align: center;
+  padding: 25px;
+  font-size: 18px;
+  border-radius: 50px;
+}
+
+.principal-diarista-text {
+  border: solid 2px var(--light-gray);
+  padding: 15px 35px;
+  border-radius: 70px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark-grey);
+  position: relative;
+}
+
+.principal-diarista-text span {
+  color: var(--primary);
+}
+
+.principal-diarista-text::after {
+  content: '';
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  background-color: var(--light-gray);
+  background-image: url('../img/icon-search-principal.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50%;
+  border-radius: 50%;
+  top: -15px;
+  right: -15px;
+}
+
+.principal-img {
+  position: relative;
+}
+
+.principal-img::after, 
+.principal-img::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  border-radius: 50%;
+}
+
+.principal-img::before {
+  width: 131px;
+  height: 131px;
+  background-color: var(--primary);
+  top: 80px;
+}
+
+.principal-img::after {
+  width: 37px;
+  height: 37px;
+  background-color: var(--light-gray);
+  bottom: 35px;
+  z-index: 50;
+}
