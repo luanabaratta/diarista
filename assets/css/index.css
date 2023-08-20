@@ -184,4 +184,32 @@ header {
 .porque hr {
   width: 10%;
   border-color: rgba(255, 255, 255, 0.25);
+  margin: 0 auto;
+}
+
+.porque-campos-item {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px;
+}
+
+.porque-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.porque-item h4, .porque-item p {
+  margin: 0;
+}
+
+.porque-item div:first-child {
+  border: solid 2px #fff;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.porque-item i {
+  font-size: 40px;
 }
