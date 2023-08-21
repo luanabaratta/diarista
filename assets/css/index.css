@@ -270,15 +270,18 @@ header {
   cursor: pointer;
 }
 
+.panel, .accordion {
+  border: solid 2px var(--primary);
+  text-align: left;
+}
+
 .panel {
   padding: 0 18px;
   overflow: hidden;
   display: none;
-}
-
-.panel, .accordion {
-  border: solid 2px var(--primary);
-  text-align: left;
+  border-top: none;
+  font-size: 17px;
+  color: #2C3A57;
 }
 
 .accordion h5 {
@@ -301,4 +304,8 @@ header {
 
 .active .minus{
   display: inline-block;
+}
+
+.active {
+  border-bottom: none;
 }
