@@ -217,6 +217,10 @@ header {
   font-size: 40px;
 }
 
+.porque-campos-item hr {
+  display: none;
+}
+
 
 /* Section FAQS */
 .faqs {
@@ -364,4 +368,104 @@ footer {
 .social-media a:hover {
   transform: scale(1.07);
   transition: .4s;
+}
+
+/* Breakpoints */
+
+@media(max-width: 1200px) {
+}
+
+@media(max-width: 992px) {
+  .principal {
+    background-size: 100% 100%;
+    background-position: bottom;
+    padding: 50px 0;
+  }
+
+  .principal-img {
+    display: none;
+  }
+
+  .principal-section {
+    justify-content: center;
+  }
+
+  .principal-description {
+    text-align: center;
+  }
+
+  .porque {
+    margin-top: 0;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 0;
+  }
+}
+
+@media(max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .principal-section, .principal-description {
+    width: 100%;
+    display: block;
+  }
+
+  .principal-description {
+    gap: 0;
+    max-width: 100%;
+  }
+
+  .principal-diarista-text, .principal-description p {
+    border: none;
+    padding: 0;
+    font-weight: normal;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .principal-diarista-text::after {
+    display: none;
+  }
+
+  .principal-diarista-text span {
+    color: var(--dark-grey);
+  }
+
+  .principal-description a {
+    display: block;
+    width: 80%;
+    padding: 15px;
+    margin: 30px auto 10px auto;
+  }
+}
+
+@media(max-width: 600px) {
+  .btn-header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .porque-campos-item {
+    gap: 15px;
+  }
+
+  .porque-campos-item hr {
+    width: 100%;
+    display: block;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .porque-item i {
+    font-size: 24px;
+  }
 }

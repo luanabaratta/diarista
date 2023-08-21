@@ -1,2 +1,2 @@
 # diarista
-### home and login page
+### landing page
