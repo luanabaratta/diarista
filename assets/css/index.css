@@ -15,10 +15,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -42,6 +38,10 @@ header {
   display: flex;
   align-items: center;
   gap: 30px;
+}
+
+.btn-header a {
+    text-decoration: none;
 }
 
 .btn-contained {
@@ -92,6 +92,7 @@ header {
   padding: 25px;
   font-size: 18px;
   border-radius: 50px;
+  text-decoration: none;
 }
 
 .principal-diarista-text {
@@ -308,4 +309,59 @@ header {
 
 .active {
   border-bottom: none;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary);
+  padding: 50px 0;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 50px;
+}
+
+.footer-item {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.footer-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-item ul a {
+  color: #fff;
+  margin: 5px 0;
+  display: inline-block;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-media i {
+  color: var(--light-gray);
+  font-size: 25px;
+}
+
+.social-media a {
+  display: grid;
+  place-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #581ECD;
+}
+
+.social-media a:hover {
+  transform: scale(1.07);
+  transition: .4s;
 }
