@@ -1,2 +1,2 @@
 # diarista
-### landing page
+### landing page responsive
